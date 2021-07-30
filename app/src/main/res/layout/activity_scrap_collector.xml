@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    tools:context=".Scrap_Collector">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scrapcollectorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1C1C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView1311"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:text="No Appointment Found"
+        android:textColor="#EEEEEE"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1911" />
+
+    <ImageView
+        android:id="@+id/imageView1911"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="152dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrapcollectorView"
+        app:srcCompat="@drawable/ic_baseline_not_interested_24" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/h2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Add New"
+        android:textColor="@color/btncolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="335dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="76dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider8">
+
+        <ImageView
+            android:id="@+id/imageViewrpt"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            app:srcCompat="@drawable/scrapcollector" />
+
+        <TextView
+            android:id="@+id/textViewrpt"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amiko_bold"
+            android:gravity="center"
+            android:text="Scrap Collectors"
+            android:textAlignment="viewStart"
+            android:textColor="#F8F8F8"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:backgroundTint="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logolayout" />
+
+    <ImageView
+        android:id="@+id/scrapback2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:scaleType="fitEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:id="@+id/logolayout"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/logo1" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lalezar"
+            android:gravity="center"
+            android:text="SCRAPLAN"
+            android:textAlignment="viewStart"
+            android:textColor="#F8F8F8"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

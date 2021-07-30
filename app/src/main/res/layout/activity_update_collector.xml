@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    tools:context=".ScrapInsert">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#181818"
+        tools:context=".ScrapInsert">
+
+
+        <TextView
+            android:id="@+id/vhbutton33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:text="Show"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collectoremail" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/armata"
+            android:text="Collector Contact"
+            android:textColor="#F6F6F6"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updatecollectoremail" />
+
+        <EditText
+            android:id="@+id/collectorcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#8A8A8A"
+            android:ems="10"
+            android:fontFamily="@font/biryani_light"
+            android:hint="Collector Contact"
+            android:inputType="phone"
+            android:paddingBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E3E3E3"
+            android:textColorHint="#8E8E8E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnuploadcollector">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#202020">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="116dp"
+                    android:text="All Right Reserved"
+                    android:textColor="#F4F4F4"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:text="Copyright © SCRAPLAN"
+                    android:textColor="#F4F4F4"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/armata"
+            android:text="Address"
+            android:textColor="#F6F6F6"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collectorcontact" />
+
+        <EditText
+            android:id="@+id/collectoraddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#8A8A8A"
+            android:ems="10"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:fontFamily="@font/biryani_light"
+            android:hint="Address"
+            android:paddingBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E3E3E3"
+            android:textColorHint="#8E8E8E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnuploadcollector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="138dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/amiko_bold"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:text="Add Collector"
+            android:textAllCaps="false"
+            android:textColor="@color/btncolor"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collectoraddress" />
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/armata"
+            android:text="Collector Email"
+            android:textColor="#F6F6F6"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updatecollectorname" />
+
+        <EditText
+            android:id="@+id/updatecollectoremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#8A8A8A"
+            android:ems="10"
+            android:fontFamily="@font/biryani_light"
+            android:hint="Collector Email"
+            android:inputType="textWebEmailAddress|textPersonName"
+            android:paddingBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E3E3E3"
+            android:textColorHint="#8E8E8E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/armata"
+            android:text="Collector Name"
+            android:textColor="#F6F6F6"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/updatecollectorname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#8A8A8A"
+            android:ems="10"
+            android:fontFamily="@font/biryani_light"
+            android:hint="Collector Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E3E3E3"
+            android:textColorHint="#8E8E8E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/h2" />
+
+        <LinearLayout
+            android:id="@+id/logolayout"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                app:srcCompat="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lalezar"
+                android:gravity="center"
+                android:text="SCRAPLAN"
+                android:textAlignment="viewStart"
+                android:textColor="#F8F8F8"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="310dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="52dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+            <ImageView
+                android:id="@+id/imageViewaddscrap"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                app:srcCompat="@drawable/addsc" />
+
+            <TextView
+                android:id="@+id/textViewaddscrap"
+                android:layout_width="205dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/convergence"
+                android:gravity="center"
+                android:text="Add Collector"
+                android:textAlignment="viewStart"
+                android:textColor="#F8F8F8"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:backgroundTint="#FAFAFA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logolayout" />
+
+        <ImageView
+            android:id="@+id/colladdback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

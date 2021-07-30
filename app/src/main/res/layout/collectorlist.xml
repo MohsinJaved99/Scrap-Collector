@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:background="#303030"
+    android:padding="15dp"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/scrapcollectorregdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/convergence"
+        android:text="Reg Date"
+        android:textColor="#E8E8E8"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintTop_toBottomOf="@+id/scrapcollectorcontact" />
+
+    <TextView
+        android:id="@+id/scrapcollectornametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amiko_bold"
+        android:text="Scrap Collector Name"
+        android:textColor="#FFD662"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scrapcollectorcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/convergence"
+        android:text="Contact"
+        android:textColor="#E8E8E8"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrapcollectorregdate"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/scrapcollectoremail" />
+
+    <TextView
+        android:id="@+id/scrapcollectoremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/convergence"
+        android:text="Email"
+        android:textColor="#E8E8E8"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrapcollectorcontact"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/scrapcollectornametxt" />
+
+    <ImageView
+        android:id="@+id/editscrapcollector"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrapcollectornametxt"
+        app:srcCompat="@drawable/ic_baseline_alternate_emailsmall" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/ic_baseline_local_phonesmall" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        app:srcCompat="@drawable/ic_baseline_date_rangesmall" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

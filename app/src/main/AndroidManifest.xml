@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scraps.scrapcollector">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:autoLink="phone"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScrapCollector">
+        <activity android:name=".update_collector"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".update_scrap"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name=".scrapDetails"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Collector_Report"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".execute_appointment"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".collector_appointments"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Collector_Dashboard"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".assign_appointment"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".appointments"
+            android:autoLink="phone"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".book_appointment"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Add_Collector"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Scrap_Collector"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Admin_Dashboard"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ScrapInsert"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".scraps"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".profile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".User_Dashboard"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".splashscreen"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
